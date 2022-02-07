@@ -55,6 +55,9 @@ return packer.startup(function(use)
       requires = { 'kyazdani42/nvim-web-devicons', opt = false }
     }
 
+    -- Nvim Tree
+    use 'kyazdani42/nvim-true.lua'
+
   -- Automatically set up the configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
