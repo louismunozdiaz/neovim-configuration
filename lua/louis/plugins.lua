@@ -46,6 +46,10 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim"
   use "nvim-lua/plenary.nvim" 
 
+  -- Theme plugins
+  -- Using Packer
+  use 'navarasu/onedark.nvim'
+
   -- Automatically set up the configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
