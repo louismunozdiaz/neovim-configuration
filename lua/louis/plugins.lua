@@ -47,8 +47,13 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" 
 
   -- Theme plugins
-  -- Using Packer
   use 'navarasu/onedark.nvim'
+
+  -- Lualine
+  use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'kyazdani42/nvim-web-devicons', opt = false }
+    }
 
   -- Automatically set up the configuration after cloning packer.nvim
   -- Put this at the end after all plugins
