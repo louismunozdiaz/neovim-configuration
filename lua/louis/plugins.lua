@@ -40,27 +40,34 @@ packer.init {
 
 -- Install your plugins here
 return packer.startup(function(use)
-  -- #### My plugins here ### --
-  -- Essential plugins
-  use "wbthomason/packer.nvim" 
-  use "nvim-lua/popup.nvim"
-  use "nvim-lua/plenary.nvim" 
+    -- Essential plugins
+    use "wbthomason/packer.nvim" 
+    use "nvim-lua/popup.nvim"
+    use "nvim-lua/plenary.nvim"
 
-  -- Theme plugins
-  use 'navarasu/onedark.nvim'
+    -- Web DevIcons
+    use 'kyazdani42/nvim-web-devicons'
 
-  -- Lualine
-  use {
-      'nvim-lualine/lualine.nvim',
-      requires = { 'kyazdani42/nvim-web-devicons', opt = false }
+    -- Theme plugins
+    use 'navarasu/onedark.nvim'
+
+    -- Lualine
+    use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
 
     -- Nvim Tree
-    use 'kyazdani42/nvim-true.lua'
+    use { 
+        'kyazdani42/nvim-true.lua',
+        requires = {'kyazdani42/nvim-web-devicons'}
+     }
 
-  -- Automatically set up the configuration after cloning packer.nvim
-  -- Put this at the end after all plugins
-  if PACKER_BOOTSTRAP then
-    require("packer").sync()
-  end
+    use 'neovim/nvim-lspconfig'
+
+    -- Automatically set up the configuration after cloning packer.nvim
+    -- Put this at the end after all plugins
+    if PACKER_BOOTSTRAP then
+        require("packer").sync()
+    end
 end)
