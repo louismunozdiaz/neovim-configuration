@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/vim,lua,executable,windows,macos
-# Edit at https://www.toptal.com/developers/gitignore?templates=vim,lua,executable,windows,macos
+# Created by https://www.toptal.com/developers/gitignore/api/git,vim,lua,windows,macos,executable
+# Edit at https://www.toptal.com/developers/gitignore?templates=git,vim,lua,windows,macos,executable
 
 ### Executable ###
 *.app
@@ -12,6 +12,21 @@
 *.pif
 *.vb
 *.wsf
+
+### Git ###
+# Created by git for backups. To disable backups in Git:
+# $ git config --global mergetool.keepBackup false
+*.orig
+
+# Created by git when using merge tools for conflicts
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+*_BACKUP_*.txt
+*_BASE_*.txt
+*_LOCAL_*.txt
+*_REMOTE_*.txt
 
 ### Lua ###
 # Compiled Lua sources
@@ -67,7 +82,7 @@ Icon
 # Thumbnails
 ._*
 
-# Files that might appear in the root of a volume
+# Files that ight appear in the root of a volume
 .DocumentRevisions-V100
 .fseventsd
 .Spotlight-V100
@@ -130,4 +145,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/vim,lua,executable,windows,macos
+# End of https://www.toptal.com/developers/gitignore/api/git,vim,lua,windows,macos,executablem
