@@ -41,6 +41,12 @@ return packer.startup(function(use)
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
+    
+    -- LSP Config
+    use {
+        'neovim/nvim-lspconfig',
+        'williamboman/nvim-lsp-installer'
+    }
 
     -- Automatically set up the configuration after cloning packer.nvim
     -- Put this at the end after all plugins
