@@ -29,41 +29,10 @@ if not status_ok then
   return
 end
 
--- Have packer use a popup window
-packer.init {
-  display = {
-    open_fn = function()
-      return require("packer.util").float { border = "rounded" }
-    end,
-  },
-}
-
--- Install your plugins here
+-- Install plugins here
 return packer.startup(function(use)
-    -- Essential plugins
+    -- Packer 
     use "wbthomason/packer.nvim" 
-    use "nvim-lua/popup.nvim"
-    use "nvim-lua/plenary.nvim"
-
-    -- Web DevIcons
-    use 'kyazdani42/nvim-web-devicons'
-
-    -- Theme plugins
-    use 'navarasu/onedark.nvim'
-
-    -- Lualine
-    use {
-    'nvim-lualine/lualine.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-    }
-
-    -- Nvim Tree
-    use { 
-        'kyazdani42/nvim-true.lua',
-        requires = {'kyazdani42/nvim-web-devicons'}
-     }
-
-    use 'neovim/nvim-lspconfig'
 
     -- Automatically set up the configuration after cloning packer.nvim
     -- Put this at the end after all plugins
