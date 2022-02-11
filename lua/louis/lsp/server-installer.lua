@@ -16,7 +16,8 @@ for _, serverName in pairs(serversToInstall) do
     if isServerAvailable then
         server:on_ready(function ()
             local opts = {
-                on_attach = require('louis.lsp.configuration.keybinds').on_attach
+                on_attach = require('louis.lsp.configuration.keybinds').on_attach,
+                capabilities = require('louis.lsp.configuration.capabilities').capabilities
             }
             server:setup(opts)
         end)

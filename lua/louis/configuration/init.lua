@@ -1,2 +1,2 @@
-require "louis.base.options"
-require "louis.base.keybinds"
+require "louis.configuration.options"
+require "louis.configuration.keybinds"

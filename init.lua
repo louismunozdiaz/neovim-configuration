@@ -1,4 +1,4 @@
-require "louis.base"
+require "louis.configuration"
 require "louis.packer"
 require "louis.lsp"
 require "louis.onedark-nvim"
