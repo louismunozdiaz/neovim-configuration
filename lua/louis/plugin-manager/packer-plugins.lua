@@ -32,13 +32,16 @@ return packer.startup(function(use)
     -- Autocomplete & Snippets
     use {
         'hrsh7th/nvim-cmp',
-        'hrsh7th/cmp-nvim-lsp',
+        'hrsh7th/cmp-buffer',
+        'hrsh7th/cmp-path',
+        'hrsh7th/cmp-cmdline',
         'saadparwaiz1/cmp_luasnip',
+        'hrsh7th/cmp-nvim-lsp',
         'L3MON4D3/LuaSnip'
     }
 
     -- Automatically set up the configuration after cloning packer.nvim
     -- Put this at the end after all plugins
-    local auto_installer = require "packer-autoinstaller"
+    local auto_installer = require "louis.plugin-manager.packer-autoinstaller"
     auto_installer.bootstrap()
 end)
