@@ -1,0 +1,5 @@
+require "louis.language-server-config.server-installer"
+require "louis.language-server-config.installer-settings"
+require "louis.language-server-config.configuration.keybinds"
+require "louis.language-server-config.configuration.capabilities"
+require "louis.language-server-config.configuration.autocompletion"

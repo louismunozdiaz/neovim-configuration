@@ -1,12 +1,10 @@
--- Get an instance of the configs
-local found, nvim_treesitter_configs = pcall(require, 'nvim-treesitter.configs')
+local isModuleLoaded, nvim_treesitter_configs = pcall(require, 'nvim-treesitter.configs')
 
--- Terminate if there was a problem
-if not found then
+if not isModuleLoaded then
     return
 end
 
--- Initialize the plugin
+-- Setup the plugin
 nvim_treesitter_configs.setup {
 
     -- One of "all", "maintained" (parsers with maintainers), or a list of languages
