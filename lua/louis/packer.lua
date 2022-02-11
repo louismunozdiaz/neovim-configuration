@@ -48,6 +48,14 @@ return packer.startup(function(use)
         'williamboman/nvim-lsp-installer'
     }
 
+    -- Autocomplete & Snippets
+    use {
+        'hrsh7th/nvim-cmp',
+        'hrsh7th/cmp-nvim-lsp',
+        'saadparwaiz1/cmp_luasnip',
+        'L3MON4D3/LuaSnip'
+    }
+
     -- Automatically set up the configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then

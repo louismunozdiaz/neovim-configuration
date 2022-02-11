@@ -1,2 +1,3 @@
-require "louis.lsp.lsp-installer"
-require "louis.lsp.lsp-installer-settings"
+require "louis.lsp.server-installer"
+require "louis.lsp.installer-settings"
+require "louis.lsp.configuration.keybinds"
