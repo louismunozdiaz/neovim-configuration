@@ -40,6 +40,9 @@ return packer.startup(function(use)
         'L3MON4D3/LuaSnip'
     }
 
+    -- File explorer
+    use 'kyazdani42/nvim-tree.lua'
+
     -- Automatically set up the configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     local auto_installer = require "louis.plugin-manager.packer-autoinstaller"

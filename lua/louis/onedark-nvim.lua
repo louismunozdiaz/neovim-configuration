@@ -25,7 +25,7 @@ onedark.setup  {
         'warm',
         'warmer',
         'light'
-    }, 
+    },
 
     -- Change code style ---
     -- Options are italic, bold, underline, none
