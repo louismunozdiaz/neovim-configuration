@@ -1,8 +1,8 @@
 -- Get an instance of the plugin
-local found, onedark = pcall(require, 'onedark')
+local status_ok, onedark = pcall(require, 'onedark')
 
 -- Terminate if there was a problem
-if not found then
+if not status_ok then
     return
 end
 
