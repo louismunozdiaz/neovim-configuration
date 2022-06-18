@@ -1,9 +1,7 @@
-# My Neovim Configuration #
+# My Neovim Configuration W.I.P.#
 
 ## Features ##
 * One Dark theme: onedark.nvim
-* Syntax highlighting: TreeSitter
-* LSP features: LSPConfig & Installer
 
 This is my first ever Neovim configuration, written entirely in Lua.
 
