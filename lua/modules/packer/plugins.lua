@@ -1,4 +1,4 @@
-local packer_installer = require('config.packer.autoinstaller')
+local packer_installer = require('modules/packer/autoinstaller')
 packer_installer.install()
 
 -- Autocommand that reloads neovim whenever you save the plugins.lua file
@@ -9,9 +9,9 @@ vim.cmd([[
   augroup end
 ]])
 
-local status_ok, packer = pcall(require, "packer")
+local ok, packer = pcall(require, "packer")
 
-if not status_ok then
+if not ok then
   return
 end
 
@@ -22,6 +22,12 @@ return packer.startup(function(use)
 
     -- Theme
     use 'navarasu/onedark.nvim'
+
+    -- Lsp
+    use {
+    	"williamboman/nvim-lsp-installer",
+    	"neovim/nvim-lspconfig",
+	}
 
     -- Automatically set up the configuration after cloning packer.nvim
     packer_installer.setup(packer)

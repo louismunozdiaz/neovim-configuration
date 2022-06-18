@@ -1,2 +1,5 @@
-require "config.packer"
-require "config.onedark-nvim"
+require('theme')
+require('keymaps')
+require('options')
+require('modules/packer')
+

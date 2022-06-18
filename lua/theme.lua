@@ -1,8 +1,8 @@
--- Get an instance of the plugin
-local status_ok, onedark = pcall(require, 'onedark')
+-- Load the module
+local ok, onedark = pcall(require, 'onedark')
 
--- Terminate if there was a problem
-if not status_ok then
+-- Terminate if there was an error
+if not ok then
     return
 end
 
